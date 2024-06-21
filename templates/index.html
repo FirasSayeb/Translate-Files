@@ -3,24 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Translate File</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-   <h1>Welcome Translate File</h1>
+    <div>
+   <h1>Welcome To Translate File</h1>
    <form action="/translate" method="post" enctype="multipart/form-data">
-   <input type="file" name="file">
-   <p>sélectionnez la langue cible:</p>
+   <input type="file"  name="file">
+   <p>select the target language:</p>
    <select name="language">
   <option value="fr">French</option>
   <option value="ar">Arabe</option>
   <option value="en">English</option>
    </select>
-   <p>sélectionnez extension cible:</p>
+   <p>select target extension:</p>
    <select name="extension"> 
   <option value="pdf">PDF</option>
   <option value="txt">TXT</option>
    </select>
    <br> <br> 
-   <input type="submit" value="translate">
+   <input type="submit" class="button-33" value="translate">
 </form>
+</div>
 </body>
 </html>
+
+
