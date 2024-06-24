@@ -35,21 +35,21 @@ def translate():
             output = BytesIO()
             pdf = canvas.Canvas(output, pagesize=letter)
             
-            # Register the Arabic font
+            
             pdfmetrics.registerFont(TTFont('Amiri', 'Amiri-Regular.ttf'))
             pdf.setFont('Amiri', 12)
             
-            # Reshape and reverse the Arabic text for proper rendering
+            
             reshaped_text = arabic_reshaper.reshape(translated)
             bidi_text = get_display(reshaped_text)
             
-            # Split the reshaped text into lines
+            
             lines = bidi_text.split('\n')
-            y = 750  # Start height for drawing text
+            y = 750  
             
             for line in lines:
                 pdf.drawString(100, y, line)
-                y -= 14  # Move to the next line
+                y -= 14  
 
             pdf.save()
             output.seek(0)
