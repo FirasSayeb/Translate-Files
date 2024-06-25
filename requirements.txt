@@ -3,6 +3,7 @@ arabic-reshaper==3.0.0
 astunparse==1.6.3
 beautifulsoup4==4.12.3
 blinker==1.6.2
+build==1.2.1
 certifi==2024.2.2
 chardet==5.2.0
 charset-normalizer==3.3.2
@@ -21,6 +22,7 @@ fsspec==2024.5.0
 gast==0.5.4
 google-pasta==0.2.0
 grpcio==1.64.0
+gunicorn==22.0.0
 h5py==3.11.0
 huggingface-hub==0.23.2
 idna==3.7
@@ -43,10 +45,12 @@ optree==0.11.0
 packaging==23.2
 Pillow==10.1.0
 protobuf==4.25.3
+psycopg2==2.9.9
 pygame==2.5.1
 Pygments==2.18.0
 pyparsing==3.1.1
 PyPDF2==3.0.1
+pyproject_hooks==1.1.0
 python-bidi==0.4.2
 python-dateutil==2.8.2
 PyYAML==6.0.1
@@ -71,4 +75,3 @@ typing_extensions==4.12.0
 urllib3==2.2.1
 Werkzeug==2.3.6
 wrapt==1.16.0
-gunicorn==19.7.1
