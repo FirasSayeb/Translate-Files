@@ -61,4 +61,4 @@ def translate():
             return send_file(output, as_attachment=True, download_name='translated.txt', mimetype='text/plain')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0",port=5000)
