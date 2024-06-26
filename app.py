@@ -15,7 +15,7 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/translate', methods=['POST'])
+@app.route('/translate', methods=['POST']) 
 def translate():
     if request.method == 'POST':
         file = request.files['file']
